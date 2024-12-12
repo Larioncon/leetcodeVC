@@ -10,7 +10,6 @@
 		1112FE922D0B8B8200C18DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1112FE912D0B8B8200C18DC2 /* AppDelegate.swift */; };
 		1112FE942D0B8B8200C18DC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1112FE932D0B8B8200C18DC2 /* SceneDelegate.swift */; };
 		1112FE962D0B8B8200C18DC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1112FE952D0B8B8200C18DC2 /* ViewController.swift */; };
-		1112FE992D0B8B8200C18DC2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1112FE982D0B8B8200C18DC2 /* Base */; };
 		1112FE9C2D0B8B8200C18DC2 /* leetcodeVC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1112FE9A2D0B8B8200C18DC2 /* leetcodeVC.xcdatamodeld */; };
 		1112FE9E2D0B8B8400C18DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1112FE9D2D0B8B8400C18DC2 /* Assets.xcassets */; };
 		1112FEA12D0B8B8400C18DC2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1112FEA02D0B8B8400C18DC2 /* Base */; };
@@ -21,7 +20,6 @@
 		1112FE912D0B8B8200C18DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1112FE932D0B8B8200C18DC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1112FE952D0B8B8200C18DC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1112FE982D0B8B8200C18DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1112FE9B2D0B8B8200C18DC2 /* leetcodeVC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = leetcodeVC.xcdatamodel; sourceTree = "<group>"; };
 		1112FE9D2D0B8B8400C18DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1112FEA02D0B8B8400C18DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,16 +56,23 @@
 		1112FE902D0B8B8200C18DC2 /* leetcodeVC */ = {
 			isa = PBXGroup;
 			children = (
-				1112FE912D0B8B8200C18DC2 /* AppDelegate.swift */,
-				1112FE932D0B8B8200C18DC2 /* SceneDelegate.swift */,
+				1112FEA82D0B8BF800C18DC2 /* Support */,
 				1112FE952D0B8B8200C18DC2 /* ViewController.swift */,
-				1112FE972D0B8B8200C18DC2 /* Main.storyboard */,
-				1112FE9D2D0B8B8400C18DC2 /* Assets.xcassets */,
-				1112FE9F2D0B8B8400C18DC2 /* LaunchScreen.storyboard */,
 				1112FEA22D0B8B8400C18DC2 /* Info.plist */,
-				1112FE9A2D0B8B8200C18DC2 /* leetcodeVC.xcdatamodeld */,
 			);
 			path = leetcodeVC;
+			sourceTree = "<group>";
+		};
+		1112FEA82D0B8BF800C18DC2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1112FE912D0B8B8200C18DC2 /* AppDelegate.swift */,
+				1112FE932D0B8B8200C18DC2 /* SceneDelegate.swift */,
+				1112FE9D2D0B8B8400C18DC2 /* Assets.xcassets */,
+				1112FE9F2D0B8B8400C18DC2 /* LaunchScreen.storyboard */,
+				1112FE9A2D0B8B8200C18DC2 /* leetcodeVC.xcdatamodeld */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +135,6 @@
 			files = (
 				1112FE9E2D0B8B8400C18DC2 /* Assets.xcassets in Resources */,
 				1112FEA12D0B8B8400C18DC2 /* Base in Resources */,
-				1112FE992D0B8B8200C18DC2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1112FE972D0B8B8200C18DC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1112FE982D0B8B8200C18DC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1112FE9F2D0B8B8400C18DC2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,9 +297,9 @@
 				INFOPLIST_FILE = leetcodeVC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +307,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Chmil.leetcodeVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,9 +328,9 @@
 				INFOPLIST_FILE = leetcodeVC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +338,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Chmil.leetcodeVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
